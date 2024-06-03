@@ -450,12 +450,15 @@ header{
 }
 
 
-
 .imagemFundo {
     grid-column: 7/ 11;     
-    grid-row: 3 / 6;
-    font-size: 20vw;
-    text-align: center;
+    grid-row: 2 / 6;
+    
+}
+
+.imagemFundo img {
+    width: 400px;
+    margin-top: 40px;
 }
 
 
@@ -1007,7 +1010,11 @@ footer .button:hover {
 
 
 
-
+@media (max-width: 1303px) {
+    .imagemFundo img {
+        display: none;
+    }
+}
 
 
 /* Media Queries */
@@ -1023,6 +1030,7 @@ footer .button:hover {
         outline:none;
         margin:2rem;
     }
+    
     .contact-left {
         display: none;
     }
